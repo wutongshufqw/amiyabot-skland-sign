@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "skland_sign": {
+            "title": "SkLand++签到群发",
+            "description": "bot推送签到消息的群号, 每个bot请尽量只配置一个, 以免被ban",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "appid",
+                    "group"
+                ],
+                "properties": {
+                    "appid": {
+                        "title": "Bot账号",
+                        "description": "BotQQ号",
+                        "type": "string"
+                    },
+                    "group": {
+                        "title": "群号",
+                        "description": "群号",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
