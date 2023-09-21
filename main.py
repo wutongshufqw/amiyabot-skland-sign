@@ -56,7 +56,7 @@ class ToolsPluginInstance(AmiyaBotPluginInstance):
 
 bot = ToolsPluginInstance(
     name='森空岛签到插件',
-    version='1.1',
+    version='1.2',
     plugin_id='amiyabot-skland-sign',
     plugin_type='tools',
     description='森空岛每日签到',
