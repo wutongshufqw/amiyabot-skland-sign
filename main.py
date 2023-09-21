@@ -42,7 +42,8 @@ class SklandSign(SignBaseModel):
                 result.remark = cred
             return result.save()
         else:
-            return SklandSign.create(user_id=user_id, open=open_)
+            return SklandSign.create(user_id=user_id, open=open_ if open_ else False, remark=cred if cred else None)
+            
 
     @staticmethod
     def get_skland_sign_open() -> List['SklandSign']:
